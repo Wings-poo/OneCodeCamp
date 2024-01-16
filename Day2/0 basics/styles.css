@@ -1,0 +1,41 @@
+h1 { /* html tag */
+    color: rgba(240, 255, 34, 0.778);
+    background-color: rgb(53, 95, 11);
+    /*
+        rgb - solid
+        rgba - gradient
+        hex, hsl, hwb
+    */
+    border: red solid; /* has to be before the width description, border-color does not work for some reason - possibly a browser bug */
+    border-width: 5px 10px 15px 20px; /* up right down left */
+    padding: 20px;
+    margin: 30px;
+}
+
+.font { /* for class, use . before the class name */
+    color: blue;
+}
+
+#cat { /* for id, use # before the id name */
+    color: pink;
+    display: block;
+    background-color: black;
+    border: red solid 1px;
+    /*
+        Default display:
+        Block: <p>, <body>, <div>, <form>, <h1>-<h6>, <table>, <ul>, <ol>, <li>
+        Inline: <a>, <img>, <span>, <input>, <label>, <select>
+    */
+}
+
+#pages { /* does not work because it targets the ul's id, not the li */
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+}
+
+.style {
+    display: block;
+}

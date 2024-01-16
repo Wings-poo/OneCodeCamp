@@ -1,0 +1,194 @@
+/*
+Rules:
+- do not edit given HTML file *Note: edited to add functionality for media
+- feel free to edit anything in the CSS file
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile {
+        padding: 5px;
+        box-sizing: border-box;
+    }   
+
+    #wrapper{
+        width: 100%;
+        background-color: #FFD9B7;
+    }
+    
+    #logo{
+        min-height: 130px;
+        width: 100%;
+        background-color: #B97A57;
+    }
+    
+    #navigation{
+        min-height: 130px;
+        width: 100%;
+        background-color: #FF7F27;
+    }
+    
+    #main_content{
+        min-height: 250px;
+        width: 100%;
+        background-color: #880015;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    #about{
+        min-height: 250px;
+        width: 100%;
+        background-color: #FFAEC9;
+    }
+    
+    /*
+    #advertisement{
+        min-height: 200px;
+        width: 155px;
+        background-color: #C8BFE7;
+        display: inline-block;
+        vertical-align: top;
+    }
+    */
+    
+    .sponsors{
+        min-height: 30px;
+        width: 100%;
+        background-color: #FFFF88;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .tablet {
+        height: 100%;
+    }   
+    
+    #wrapper{
+        width: 100%;     
+        background-color: #FFD9B7;
+    }
+    
+    #logo{
+        height: 15vh;
+        width: 30%;
+        background-color: #B97A57;
+        display: inline-block;
+        margin: 0% 5% 2.5% 0%;
+    }
+    
+    #navigation{
+        height: 15vh;
+        width: 64%; /* I don't understand, why does it not count to 100%? */
+        display: inline-block;
+        background-color: #FF7F27;
+        margin: 0% 0% 2.5% 0%;
+    }
+    
+    #main_content{
+        width: 100%;
+        background-color: #880015;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0% 0% 2.5% 0%;
+    }
+    
+    #about{
+        height: 65vh;
+        width: 100%;
+        background-color: #FFAEC9;
+    }
+    
+    /*
+    #advertisement{
+        min-height: 200px;
+        width: 155px;
+        background-color: #C8BFE7;
+        display: inline-block;
+        vertical-align: top;
+    }
+    */
+    
+    .sponsors{
+        min-height: 5vh;
+        width: 49%;
+        background-color: #FFFF88;
+        display: inline-block;
+        margin: 0% 0% 2.5% 5px; /*actually wrong because I'm supposed to keep percentages consistent*/
+    }
+}
+
+/*fixed exercise 1 :)*/
+@media only screen and (min-width: 1023px) {
+    .desktop {
+        box-sizing: border-box;
+        padding: 1%;
+        height: 100%;
+    }
+
+    /*changed widths to percentages and fixed the margins*/
+    #wrapper{
+        width: 100%;
+        background-color: #FFD9B7;
+        margin: 0px auto;
+    }
+    
+    #logo{
+        height: 10vh;
+        width: 10%;
+        background-color: #B97A57;
+        display: inline-block;
+        margin: 0% 1% 1% 0%;
+    }
+    
+    #navigation{
+        height: 10vh;
+        width: 88%; /*again, there's a 1% extra*/
+        background-color: #FF7F27;
+        display: inline-block;
+        margin: 0% 0% 1% 0%;
+    }
+    
+    #main_content{
+        width: 100%;
+        background-color: #880015;
+        box-sizing: border-box;
+        padding: 1%;
+    }
+    
+    #about{
+        min-height: 50vh;
+        width: 83%;
+        background-color: #FFAEC9;
+        display: inline-block;
+    }
+    
+    #advertisement{
+        min-height: 30vh;
+        width: 15%;
+        background-color: #C8BFE7;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+    }
+    
+    .sponsors{
+        height: 8vh;
+        width: 32%;
+        background-color: #FFFF88;
+        display: inline-block;
+        margin: 0 -.75% 0 1%;
+    }
+}
+
+/*
+From Wendel:
+- can do 2 ways:
+> one of each
+> default then add the conditionals (mobile (and tablet)) since that will override the first part
+*/

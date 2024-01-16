@@ -1,0 +1,86 @@
+/*
+Rules:
+- do not edit given HTML file
+- feel free to edit anything in the CSS file
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 20px;
+}
+
+#wrapper{
+    width: fit-content;
+    background-color: #FFD9B7;
+    margin: 0px auto;
+}
+
+#logo{
+    min-height: 130px;
+    width: 260px;
+    background-color: #B97A57;
+    display: inline-block;
+}
+
+#navigation{
+    min-height: 130px;
+    width: 655px;
+    background-color: #FF7F27;
+    display: inline-block;
+}
+
+#main_content{
+    min-height: 250px;
+    width: fit-content;
+    background-color: #880015;
+}
+
+#about{
+    min-height: 250px;
+    width: 650px;
+    background-color: #FFAEC9;
+    display: inline-block;
+}
+
+#advertisement{
+    min-height: 200px;
+    width: 155px;
+    background-color: #C8BFE7;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sponsors{
+    min-height: 30px;
+    width: 310px;
+    background-color: #FFFF88;
+    display: inline-block;
+    padding: 10px;
+}
+
+/*
+From Wendel: 
+- first is the two rectangles: inline-block; can't use inline since height and width are defined
+- margin 15 15 0 15 (right is 0 because the orange already has a margin
+- main content/maroon was not edited except for margin 5 0 5 15 (and width?)
+- pink same where right has 0 margin
+- blue has 90px bottom margin
+- sponsors has -15 right margin
+- always take note that margin gets added up from other parts
+From LJ:
+- inline-block
+- margin-left and top are the only ones used
+- widths were edited
+- advertisement has higher margin-bottom
+- sponsors has negative margin
+From Dee:
+- used same CSS for all id in one line (#1 #2 #3 {display: inline-block}) 
+From Dion:
+- used flex box, though did not use it correctly
+- From Ma'am Ian: flex box is not part of fundamentals, but study it on your own
+- From Ma'am Ian: you can move html parts easier without flex box because flex box will automatically align
+*/
