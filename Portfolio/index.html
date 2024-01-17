@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Amanda Lim Portfolio</title>
+        <!--<meta name="description" content="blah blah">-->
+        
+        <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!--<script src="any_JS_library.js"></script>-->
+        
+    </head>
+
+    <body>
+        <!--From Marko: sample (cool) portfolio https://jesse-zhou.com/-->
+        <!--From Wendel: sample (cool) portfolio https://bruno-simon.com-->
+
+        <!--
+            Ideas:
+            - career application website (e.g. indeed) (https://jsondev-solutions.com/)
+            -- job list
+            -- job posting
+            -- job application
+            -- profile/dashboard
+            -- interview video call
+            - restaurant website (e.g. mang inasal)
+            -- pizza order form (continue first activity)
+            - art portfolio
+            -- section between pixel and traditional art
+            -- section between fanart of cookie run and alchemy stars
+            -- section for original art
+            - instagram/doowit
+            - algo bootleg website :)
+            - weather API (from Dion hehe)
+        -->
+
+        <!--Just 2D, redirect to same website-->
+        <!--
+            Ideas:
+            From Dether: Introduction in home; Add home, about, services, portfolio navbar; background; RWD; address?; footer for socmed
+                mt (margin top), pt (padding top), card for services (container)
+                From Ma'am Ian: script js and bootstrap at the very bottom <script src="index.js"></script> <something for bootstrap>
+            From Harold: Header (still empty); About Me; Contact (socmed)
+            From LJ: Logo; Navbar (home, projects, about me, contact); Carousel of projects (mas simple ung carousel code niya);
+            From Marko: CDN ni JS ung di nagana sa carouusel sa dulo/header (copy from bootstrap) - check more header files in bootstrap; Services offered (front, back, full) and sample project; Contact Me;
+                Sectioning so parts don't overlap when scrolling (though dependent sa pc)
+            From Wendel: About and Projects in Navbar; Introduction in Home;
+                bootstrap is aesthetic, tailwind is minimalist
+                master rows and columns; try/practice on those you want to use, don't overwhelm yourself
+            From Dion: Programming languages known; downloaded bootstrap instead of link
+                From Ma'am Ian: better to use link instead of download
+            From Marko: Certificates
+        -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="ascend.gif" width = 50px></a> <!--Note to self: change logo-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Day1/exercise/expected-output.png" alt="image of pizza order form output" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Day2/exercise 2/expected-output-desktop.png" alt="image of position practice for desktop output" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Day1/html practice/Algo++ cover.png" alt="image of UP Algo++ cover photo" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <a id="about-me">
+            <h1>Amanda Lim</h1>
+            <p>Some description about me</p>
+        </a>
+
+        <a id="services">
+            <h1>Services Offered</h1>
+            <ul>
+                <li>Lectures on Data Structures and Algorithms</li>
+                <p>Competitive Programmer for 3 years and lecturer on DSA for 2 years. Former member of UP Programming Guild and founder of UP Algorithm Plus-Plus.</p>
+                <li>Web Application Development</li>
+                <p>Web Developer who trained in OneCodeCamp bootcamp.</p>
+            </ul>
+        </a>
+
+        <a id="projects">
+            <!--Probably in JS, but put dropdown here for week 1 to week 4 projects and extra projects-->
+            <div class="container-fluid text-center">
+                <!--First row-->
+                <div class="row">
+                    <h1>Week 1</h1>
+                    <div class="col"> <!--breakpoint-->
+                        <div class="custom-box">
+                            <h2>Day 1: Pizza Order Form</h2>
+                            <p>An HTML practice on making forms</p>
+                            <a href="/Day1/exercise/pizza-order-form.html"><img src="/Day1/exercise/expected-output.png" alt="image of pizza order form output" class="img-proj"></a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="custom-box">
+                            <h2>Day 2: Position Practice</h2>
+                            <p>A CSS practice on positioning</p>
+                            <a href="/Day2/exercise 2/index.html"><img src="/Day2/exercise 2/expected-output-desktop.png" alt="image of position practice for desktop output" class="img-proj"></a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="custom-box">
+                            <h2>Day 3: Bootstrap Practice</h2>
+                            <p>A Bootstrap Practice Website</p>
+                            <button type="button" class="btn btn-link"><a href="/Day3/bootstrap-practice/index.html">Link</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Second row-->
+                <div class="row">
+                    <h1>Extra Works</h1>
+                    <div class="col">
+                        <div class="custom-box">
+                            <h2>UP Algo++ Information Website</h2>
+                            <p>An HTML practice</p>
+                            <a href="/Day1/html practice/algo-info-website.html"><img src="/Day1/html practice/Algo++ cover.png" alt="image of UP Algo++ cover photo" class="img-proj"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a id="contact">
+            <h1>Contact Me</h1>
+            <p>Contact Details Here</p>
+        </a>
+
+    </body>
+</html>

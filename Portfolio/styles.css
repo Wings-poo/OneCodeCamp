@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.not-navbar {
+    margin: 75px 0 0 0;
+}
+
+.img-proj {
+    width: 500px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.custom-box {
+    text-align: center;
+}
+
+.carousel-inner > .carousel-item > img {
+    height: 90vh;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
