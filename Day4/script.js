@@ -2,7 +2,7 @@
 // naming convention of variables: first char is alphabetical, $ or _
 /*
     From Marko:
-    var- var has function scope, which means it is only scoped within the function where it is declared.
+    var - var has function scope, which means it is only scoped within the function where it is declared.
     let - let has block scope, which means it is scoped within the block (enclosed by curly braces) where it is declared.
     const - constant
     From Ma'am Ian:
