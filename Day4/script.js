@@ -2,7 +2,7 @@
 // naming convention of variables: first char is alphabetical, $ or _
 /*
     From Marko:
-    var- var has function scope, which means it is only scoped within the function where it is declared.
+    var - var has function scope, which means it is only scoped within the function where it is declared.
     let - let has block scope, which means it is scoped within the block (enclosed by curly braces) where it is declared.
     const - constant
     From Ma'am Ian:
@@ -124,7 +124,7 @@ let fruits = ["apple", "banana", "orange", "mango"];
 console.log(fruits); // prints whole array along with length and prototype (Note to self: research on this)
 console.log(fruits[0]);
 console.log(fruits[fruits.length - 1]);
-console.log(fruits[-1]); // outputs undefined (not like python (iirc python outputs last element with that))
+console.log(fruits[-1]); // (experiment from me) outputs undefined (not like python (iirc python outputs last element with that))
 // more on arrays: https://www.w3schools.com/js/js_array_methods.asp
 // my experiment:
 const exp = [1,"one",1.0,true]; // yep, this works
