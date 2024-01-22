@@ -1,0 +1,50 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    /*border: 3px solid black; // so you can see the border*/
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* // found an easier way in JS :)
+#pink {
+    background-color: pink;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#black {
+    background-color: black;
+}
+
+#\#632c13 {
+    background-color: #632c13;
+    // credits to: https://stackoverflow.com/questions/28562127/css-selector-for-id-starting-with-hash
+}
+*/
+
+#reset {
+    background-color: white;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute; 
+}
