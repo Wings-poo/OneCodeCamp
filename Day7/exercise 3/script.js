@@ -24,6 +24,11 @@ function getBdayBtn ()
     let valid = true;
     
     bday = prompt("Enter Bday (MM/DD/YYYY)");
+    
+    let arr = bday.split('/');
+    if (arr.length != 3)
+        valid = false;
+
     [birthMonth, birthDate, birthYear] = bday.split('/');
     
     console.log(birthYear, birthMonth, birthDate);
