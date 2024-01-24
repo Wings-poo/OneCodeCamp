@@ -198,7 +198,7 @@ From Marko:
     // ${String(minutes).padStart(2, '0'))}
     
 From Dion:
-    // used timerInterval (idk why (I can't see if he used setInterval))
+    // used timerInterval (idk why (I can't see if he used setInterval (he didn't though maybe it works for setTimeout?)))
     // * 60 then % 60, so that the if condition is just totalSeconds
     // end of startTimer() while loop await new Promise(resolve => setTimeout(resolve, 1000));
 
