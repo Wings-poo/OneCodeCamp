@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tick Tock</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="container-fluid text-center">
+            <h1>Tick Tock</h1>
+            <h6>A countdown timer</h6>
+
+            <br>
+
+            <p>Enter a time between 1 to 60 (minutes)</p>
+            <form name="myForm" action="" method="GET">
+                <input type="number" name="fname" value="0">
+                <input type="button" name="button" value="Submit" onClick="getTime(this.form)">
+            </form>
+
+            <hr>
+
+            <form>
+                <h3>Meme Time Selector</h3>
+                <div>Time: <span id="timeDisplay">0</span></div>
+                <input id="slider" type="range" name="fname" min="-60" max="60" style="transition: width 0.5s ease-in-out;">
+                <hr>
+                <div>
+                    <input id="advancedMode" type="checkbox">
+                    <label for="advancedMode">Advanced Mode</label>
+                    <input id="angleSlider" type="range" min="-10" max="10" step="0.02" style="display: none;" value="0">
+                </div>
+                <input id="submit" type="button" value="Submit" onClick="getTime(this.form)">
+            </form>
+
+            <hr>
+
+            <h4 id="timeValidity">Invalid Time</h4>
+        </div>
+
+        <br>
+
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <button onClick="startTimer()" class="btn btn-primary" style="display:inline-block;">Start Timer</button>
+                </div>
+                <div class="col-6">
+                    <h1 id="timer">00:00</h1>
+                </div>
+                <div class="col">
+                    <button onClick="resetTimer()" class="btn btn-danger" style="display:inline-block;">Reset Timer</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
