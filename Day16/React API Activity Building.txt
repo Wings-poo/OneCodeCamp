@@ -1,0 +1,6 @@
+Create an application applying any API using both method:
+
+1. Fetch function
+2. Using Axios Library
+
+You can use any of your existing react app or create a new one. Up to you.

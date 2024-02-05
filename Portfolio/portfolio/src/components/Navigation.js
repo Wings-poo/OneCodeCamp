@@ -31,7 +31,7 @@ const Navigation = () => {
                                 <Link to="/Projects" className="nav-link" href="#projects">Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Contact" className="nav-link" href="#contact">Contact</Link>
+                                <Link to="/Contact" className="nav-link" href="#contact">Contact Me</Link>
                             </li>
                         </ul>
                     </div>
