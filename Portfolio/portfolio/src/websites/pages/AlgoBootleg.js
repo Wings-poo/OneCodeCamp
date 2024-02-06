@@ -44,7 +44,10 @@ const AlgoBootleg = () => {
     {
         let fetchLink = "https://projecteuler.net/profile/" + username + ".txt";
         try {
-            const response = await Axios.get(fetchLink);
+            const response = await Axios.get(fetchLink,
+                {headers: {'Accept': 'text/html'},
+                responseType: 'document'}
+            );
 
             const result = response.data;
             setSolved(result); // to change to split ',' then get second to last?
@@ -93,11 +96,11 @@ const AlgoBootleg = () => {
                 </Button>
             </Form>
 
-            {(solved !== -1) && loading && <p>Loading...</p>}
+            {loading && <p>Loading...</p>}
 
-            {(solved !== -1) && error && <p>Error: {error}</p>}
+            {error && <p>Error: {error}</p>}
 
-            {(solved !== -1) && !loading && !error && (
+            {!loading && !error && (
                 <p>Problems Solved: {solved}</p>
             )}
         </div>
